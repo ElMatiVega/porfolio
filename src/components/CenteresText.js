@@ -1,13 +1,6 @@
 import React from "react";
 import { Grid, Typography } from "@mui/material";
-import '../../src/styles/CenteredText.css'
-
-// const useStyles= makeStyles((theme)=>({
-//     container:{
-//       background: '#f5f7f9',
-//       // padding: '4vw 12vw',
-//     }
-// }))
+import '../styles/CenteredText.css'
 
 
 export function CenteresText() {
