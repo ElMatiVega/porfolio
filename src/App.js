@@ -1,7 +1,7 @@
 import { NavBar,  CenteresText, TextWithImage } from "./components";
 import "./App.css";
-import { createTheme } from "@mui/material";
-import {primary, secundary } from "./color-pallete";
+import { createTheme } from "@mui/material/styles";
+import {primaryColor, secondaryColor } from "./color-pallete";
 import { ThemeProvider } from "@emotion/react";
 
 const myContent =[
@@ -28,13 +28,24 @@ const myContent =[
 ]
 
 const theme = createTheme({
-    palette: {
-      primary: {
-        main: primary[500],
+  palette: {
+      primary:{
+        main:primaryColor[500],
+
+        light:primaryColor[200],
+        
+        dark:primaryColor[700],
       },
-      secondary: {
-        main: secundary[500],
+      
+      secondary:{
+        main:secondaryColor[500],
+
+        light:secondaryColor[200],
+        
+        dark:secondaryColor[700],
       },
+        
+      
     },
 });
 
@@ -45,7 +56,7 @@ function App() {
       <NavBar />
       <CenteresText />
       {
-        myContent.map((item, index)=>(<TextWithImage textToTheRight={index%2===0} content={item} />))
+        myContent.map((item, index)=>(<TextWithImage textToTheRight={index%2===0} key={index} content={item} />))
       }
     </ThemeProvider>
   );

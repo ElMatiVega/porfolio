@@ -27,19 +27,19 @@ const TextToTheRight = (props) => {
           height="700"
         ></img>
       </Grid>
-      <Grid item xs={4}>
+      <Grid item xs={6}>
         <Grid container direction="column" alignItems="center" spacing={3}>
           <Grid item xs>
-            <Typography variant="h6">{props.content.title}</Typography>
+            <Typography variant="h6" className="title">{props.content.title}</Typography>
           </Grid>
           <Grid item xs spacing={3}>
-            <Typography variant="body1">
+            <Typography variant="body1"className="subtitle">
               <b>{props.content.subtitle}</b>
             </Typography>
           </Grid>
           
-          {props.content.descriptions.map((description)=>(
-            <Description description={description}/>
+          {props.content.descriptions.map((description, index)=>(
+            <Description key={index}  description={description}/>
           ))}
 
           <Grid item xs spacing={3}>
@@ -66,18 +66,18 @@ const TextToTheLeft = (props) => {
       alignItems="center"
       spacing={3}
     >
-      <Grid item xs={4}>
+      <Grid item xs={6}>
         <Grid container direction="column" alignItems="center" spacing={3}>
           <Grid item xs>
-            <Typography variant="h6">{props.content.title}</Typography>
+            <Typography variant="h6" className="title">{props.content.title}</Typography>
           </Grid>
           <Grid item xs spacing={3}>
-            <Typography variant="body1">
+            <Typography variant="body1" className="subtitle">
             {props.content.subtitle}
             </Typography>
           </Grid>
-          {props.content.descriptions.map((description)=>(
-            <Description description={description}/>
+          {props.content.descriptions.map((description, index)=>(
+            <Description key={index} description={description}/>
           ))}
           {/* <Grid item xs spacing={3}>
             <Typography variant="body1">

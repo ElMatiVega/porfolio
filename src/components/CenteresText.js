@@ -1,13 +1,20 @@
 import React from "react";
-import { Grid, Typography } from "@mui/material";
+import { Grid, Typography} from "@mui/material";
 import '../styles/CenteredText.css'
 
-
+  
+// const useStyles= makeStyles((theme)=>({
+//   container:{
+//     padding:'4vw 12vw',
+//     background:'#212121'
+//   }
+// }))
 export function CenteresText() {
-  // const classes= useStyles()
+//  const classes= useStyles()
   return (
     <Grid 
-      className='container'
+     className="container"
+      // className={classes.container}
       container
       direction="column" 
       justify="space-around" 

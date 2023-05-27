@@ -1,4 +1,4 @@
-export const primary={
+export const primaryColor={
     50 : '#e4e4e4',
     100 : '#bcbcbc',
     200 : '#909090',
@@ -16,21 +16,21 @@ export const primary={
 
 }
 
-export const secundary={
-    50: '#e4e4e4',
-    100: '#bcbcbc',
-    200: '#909090',
-    300: '#646464',
-    400: '#424242',
-    500: '#212121',
-    600: '#1d1d1d',
-    700: '#181818',
-    800: '#141414',
-    900: '#0b0b0b',
-    A100: '#e76c6c',
-    A200: '#e04040',
-    A400: '#ec0000',
-    A700: '#d30000',
+export const secondaryColor={
+    50: '#e8f0f8',
+    100: '#c5daee',
+    200: '#9ec2e3',
+    300: '#77aad7',
+    400: '#5a97cf',
+    500: '#3d85c6',
+    600: '#377dc0',
+    700: '#2f72b9',
+    800: '#2768b1',
+    900: '#1a55a4',
+    A100: '#dae9ff',
+    A200: '#a7caff',
+    A400: '#74abff',
+    A700: '#5b9cff',
 
 }
 

@@ -1,9 +1,25 @@
 .gridTextToTheRigth{
+    background:#181818;
     justify-content: space-around;
+    font-weight: 500;
+    color:#9ec2e3
 }
 
 .gridTextToTheLeft{
+    background:#181818;
     justify-content: space-around;
+    font-weight: 500;
+    color:#9ec2e3
+}
+.title{
+    color:#77aad7;
+}
+
+.subtitle{
+    color: #9ec2e3;
+}
+.description{
+    color: #9ec2e3;
 }
 img{
     width: 100%;
